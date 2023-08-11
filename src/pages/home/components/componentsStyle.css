@@ -1,0 +1,118 @@
+.navbar {
+  position: absolute;
+  width: 65%;
+  height: 70px;
+  bottom: 75%;
+  left: 15%;
+  background-color: rgb(186, 167, 167,0.2);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.links {
+  
+  margin-right: 50px;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+
+
+.parent{
+  position: relative;
+  width:  100vw; /* Parent container takes up 100% of its parent's width */
+  height: 100vh; /* Adjust this if you want the container to take up a specific percentage of the viewport height */    
+  /* background-color: rgba(255, 0, 0, 0.2) ; */
+  display: flex;
+  
+}
+.heroImage {
+  position: absolute;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+ /* top: 0;
+  left: 0; */ 
+  width: 100%; /* Width covers the whole page width */
+  height: 100%; /* Height is a variable value as a percentage of the viewport height */
+  background-color: #1B1927;
+  /* background-image: url('./background.jpg'); */
+  /* background-size:cover; */
+  
+  background-position: center;
+  /* background-attachment:local; */
+ /* border:12px solid black; */
+
+  z-index: -1;
+}
+.image{
+position: absolute;
+top:30%;
+margin-left: 50%;
+height: 70%;
+width: 50%;
+/* background-color:orange; */
+
+}
+.text{
+  position: relative;
+  top:14%;
+  right: 40%;
+  padding:2%;
+  /* bottom: 20%;
+  right: 50%; */
+  height: 65%;
+  width: 40%;
+  /* border: 200px; */
+  /* border-radius: 20px;
+  border-color: rgb(82, 27, 27); */
+   /* color:#1B1927; */
+   /* IMPORTANT CODE FOR EASE OF STYLING  PURPOSES */
+  /* background-color:orange; */
+}
+.yellow{
+height: 100%;
+width: 100%;
+}
+.heroButton{
+  position: relative;
+  /* left:10%; */
+  bottom:0%;
+  background-color:rgba(125, 108, 202, 0.963);
+  color: white;
+  width:32%;
+  height:10%;
+  border:0px;
+  border-radius:15px;
+
+}
+.herop1{
+  font-size:250%;
+  color:white;
+  font-weight: 300%;
+  width: 75%;
+  margin-bottom: 0%;
+}
+.herop2{
+  margin-top: 0%;
+  font-size:250%;
+  color:white;
+  font-weight: 400;
+}
+.herop3{
+  font-size:23px;
+  font-weight: lighter;
+  color:white;
+  width:75%;
+  
+}
+.Accessories{
+color:rgba(125, 108, 202, 0.963);
+}
