@@ -24,7 +24,6 @@ export const ShopContextProvider = (props) => {
     }
     return totalAmount;
   };
-
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };

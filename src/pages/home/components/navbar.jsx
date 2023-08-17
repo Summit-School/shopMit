@@ -5,6 +5,7 @@ import "./componentsStyle.css";
 export const Navbar = () => {
   return (
     <div className="navbar">
+    <p className="shoMit" >Shop<span>M</span>it</p>
       <div className="links">
         <Link to="/home/"> Shop </Link>
         <Link to="/home/contact"> Contact </Link>

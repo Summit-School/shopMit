@@ -9,14 +9,15 @@ export const Product = (props) => {
 
   return (
     <div className="product">
-      <img src={productImage} />
-      <div className="description">
-        <p>
+      <div className="productImage" ><img src={productImage} /></div>
+      <p className="productName">
           <b>{productName}</b>
         </p>
+      {/* <div className="description">
+
         <p> ${price}</p>
       </div>
-      {/* <button className="addToCartBttn" onClick={() => addToCart(id)}>
+      <button className="addToCartBttn" onClick={() => addToCart(id)}>
         Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
       </button> */}
     </div>

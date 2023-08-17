@@ -12,13 +12,14 @@ const Home = () => {
   return (
     <div className="home">
 
-        <Hero/>
-{/*     
+        
+        {/* <Cart/> */}
+    <Hero/>
     <ShopContextProvider>
      <Shop />
      </ShopContextProvider>
     <Footer/>
-     */}
+    
     
     {/* <ShopContextProvider>
     <Router>
