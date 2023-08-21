@@ -4,7 +4,7 @@ import { Shop } from "./pages/shop/shop";
 import { Contact } from "./pages/contact";
 import { Cart } from "./pages/cart/cart";
 import { ShopContextProvider } from "./context/shop-context";
-import Footer from "./components/footer";
+import {Footer} from "./components/footer";
 import Hero  from "./components/hero";
  
 
@@ -12,16 +12,16 @@ const Home = () => {
   return (
     <div className="home">
 
-        
+<Navbar />
         {/* <Cart/> */}
     <Hero/>
     <ShopContextProvider>
      <Shop />
-     </ShopContextProvider>
-    <Footer/>
+     </ShopContextProvider> 
+     <Footer/>
     
     
-    {/* <ShopContextProvider>
+   {/* <ShopContextProvider>
     <Router>
       
      
@@ -34,7 +34,7 @@ const Home = () => {
         <Route path="/home/cart" element={<Cart />} />
       </Switch>
     </Router>
-  </ShopContextProvider> */}
+  </ShopContextProvider>  */}
     </div>
 
 

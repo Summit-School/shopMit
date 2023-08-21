@@ -1,14 +1,10 @@
 .navbar {
-  position: absolute;
-  width: 65%;
-  height: 70px;
-  bottom: 75%;
-  left: 15%;
-  background-color: rgb(186, 167, 167,0.2);
+  background-color: rgba(80, 62, 92, 0.2) ;
+  /* border:3px solid black; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border-radius: 30px;
+  height: 12vh;
 }
 
 .links {
@@ -18,7 +14,6 @@
 
 .links a {
   text-decoration: none;
-  color: white;
   margin-left: 20px;
   font-size: 25px;
 }
@@ -27,9 +22,8 @@
 
 .parent{
   position: relative;
-  width:  100vw; /* Parent container takes up 100% of its parent's width */
-  height: 100vh; /* Adjust this if you want the container to take up a specific percentage of the viewport height */    
-  
+  width:  100%; /* Parent container takes up 100% of its parent's width */
+  height: 88vh; /* Adjust this if you want the container to take up a specific percentage of the viewport height */    
   display: flex;
   /* border:5px solid rgb(174, 47, 47); */
   
@@ -37,64 +31,45 @@
   
 }
 .heroImage {
-  position: absolute;
+  /* position: relative; */
   display: flex;
-  justify-content:space-between;
-  align-items: center;
- /* top: 0;
-  left: 0; */ 
+  justify-content:row;
+  row-gap: 0px;
+  align-items:end;
   width: 100%; /* Width covers the whole page width */
   height: 100%; /* Height is a variable value as a percentage of the viewport height */
-  background-color: #1B1927;
-  /* background-image: url('./background.jpg'); */
-  /* background-size:cover; */
-  
-  /* background-position: center; */
-  /* background-attachment:local; */
- /* border:12px solid black; */
-
-  z-index: -1;
+  /* background-color: #1B1927; */
+  /* background-color: rgb(52, 0, 52); */
+  background-color: rgb(39, 3, 64) ;
+  /* border:12px solid black; */
 }
 .image{
-position: absolute;
-top:30%;
-margin-left: 50%;
-height: 70%;
-width: 50%;
-/* background-color:orange; */
-
+height: 95%;
+width: 60%;
+/* border:12px solid red; */
 }
 .text{
-  position: relative;
-  top:14%;
-  right: 40%;
-  padding:2%;
-  /* bottom: 20%;
-  right: 50%; */
-  height: 65%;
+  /* margin-bottom: 0%; */
+  padding-left:16%;
+  /* padding-right: 0%; */
+  padding-bottom: 4%;
+  height: 85%;
   width: 40%;
-  /* border: 200px; */
-  /* border-radius: 20px;
-  border-color: rgb(82, 27, 27); */
-   /* color:#1B1927; */
-   /* IMPORTANT CODE FOR EASE OF STYLING  PURPOSES */
-  /* background-color:orange; */
+  /* border:12px solid black; */
 }
+
 .yellow{
 height: 100%;
 width: 100%;
 }
 .heroButton{
   position: relative;
-  /* left:10%; */
   bottom:0%;
   background-color:rgba(125, 108, 202, 0.963);
   color: white;
   width:32%;
   height:10%;
-  border:0px;
   border-radius:15px;
-  /* z-index: 7; */
   transition:0.8s;
   font-size: larger;
 
@@ -132,10 +107,86 @@ span{
   color:rgba(125, 108, 202, 0.963);
 }
 .shoMit{
-  position: relative;
-  right: 55%;
+  padding-right:70% ;
   text-align: end;
   font-size:200%;
   font-weight: bold;
   color:orange;
+}
+.testimony{
+/* border: 5px solid green; */
+height: auto;
+}
+.testwrap{
+  /* border: 5px solid black; */
+  margin-left: 30%;
+  margin-right:0%;
+  height: 55vh;
+  width: 80vh;
+  border-radius:30px;
+  /* background:orange; */
+}
+/* .testwrap{
+  
+} */
+.testwrap img{
+  /* border: 5px solid red; */
+  height: 100%;
+  width: 100%;
+  border-radius:30px;
+
+}
+.testimony2{
+ /* border: 5px solid yellow; */
+ height: 50vh;
+ padding-right:10% ;
+ text-align: center;
+}
+.testButton{
+  background-color:rgba(125, 108, 202, 0.963);
+  color: white;
+  border-radius:15px;
+  font-size: 2rem;
+  border-radius:15px;
+  height: 15%;
+  width: 20%;
+  margin-left: 10%;
+  
+
+}
+.testP{
+  font-size: 3.2rem;
+  font-weight: bolder;
+  margin-left: 9%;
+  margin-bottom: 1.5%;
+}
+
+.footerStyle  {
+  /* background-color: red; */
+  background-color: rgba(80, 62, 92, 0.2) ;
+  padding: 20px 0;
+  /* position: 'absolute'; */
+
+  bottom: 0;
+  width: 100%;
+  height: 30vh;
+}
+.containerStyle  {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+  
+}
+ul{
+  list-style-type:none;
+  line-height: 4ch;
+  font-size: 1.2rem;
+}
+ul li:first-child{
+  font-size: 1.5rem;
+  font-weight:500;
+  color:rgb(75, 73, 73);
+  line-height: 4ch;
+
 }

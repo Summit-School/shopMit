@@ -1,29 +1,38 @@
-import React from 'react';
+import React from "react";
+import "./componentsStyle.css";
 
-const Footer = () => {
+export const Footer = () => {
   return (
-    <footer style={footerStyle}>
-      <div style={containerStyle}>
-        <p>&copy; 2023 Your E-commerce Website. All rights reserved.</p>
-        <p>Contact: contact@example.com</p>
+    <footer className="footerStyle">
+      <div className="containerStyle">
+        <div>
+        <p className="shoMit" >Shop<span>M</span>it</p>
+          <p>&copy; 2023 Your E-commerce Website. All rights reserved.</p>
+          <p>Contact: contact@example.com</p>
+          
+        </div>
+        <div>
+
+          <ul>
+          
+            <li>Useful links </li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Login </li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div>
+            <ul>
+              <li>Products</li>
+              <li>Trousers</li>
+              <li>Electronics</li>
+              <li>Shoes</li>
+              <li>Jewelries</li>
+            </ul>
+          
+        </div>
       </div>
     </footer>
   );
 };
-
-const footerStyle = {
-  background: '#f2f2f2',
-  padding: '20px 0',
-  // position: 'absolute',
-  bottom: 0,
-  width: '100%',
-};
-
-const containerStyle = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  flexDirection: 'column',
-};
-
-export default Footer;

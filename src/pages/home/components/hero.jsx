@@ -6,8 +6,7 @@ const Hero = () => {
   return (
     <div className="parent">
       <div className="heroImage">
-        <Navbar />
-        <div></div>
+        
         <div className="text">
           <p className="herop1">We've Got The Best </p>
           <p className="herop2">
