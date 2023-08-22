@@ -59,7 +59,7 @@
 .featureAnim{
   margin-top: 20%;
   width:45vh;
-  height:45vh;
+  height:40vh;
   border-radius:70px;
   animation: slideAnimation 9000ms linear infinite; /* Apply animation to the wrapper */
   /* border:5px solid rgb(202, 43, 43); */

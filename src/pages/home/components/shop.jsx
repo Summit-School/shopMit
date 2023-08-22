@@ -1,14 +1,19 @@
 import React from "react";
-import { PRODUCTS } from "../../products";
+import { PRODUCTS } from "../assests/products";
 import { Product } from "./product";
 import "./shop.css";
-import bags from "./bags.png";
-import redlady from "./redLady.png";
-import down from "./down.png";
+// import bags from "./bags.png";
+import bags from "../assests/HComponentsImages/bags.png";
+// import redlady from "./redLady.png";
+import redlady from "../assests/HComponentsImages/redLady.png";
+// import down from "./down.png";
+import down from "../assests/HComponentsImages/down.png";
 
-import { feat } from "../../featProducts";
+// import { feat } from "../../featProducts";
+import { feat } from "../assests/featProducts";
 import { FeatAnimate } from "./featureAnimation";
-import { Testimonials } from "../../components/testimonials";
+// import { Testimonials } from "../../components/testimonials";
+import { Testimonials } from "../components/testimonials";
 // import { featAnimate } from "./featureAnimation";
 
 export const Shop = () => {
@@ -59,7 +64,7 @@ export const Shop = () => {
           <Product data={product} />
         ))}
       </div>
-      
+
       <Testimonials/>
     </div>
   );
