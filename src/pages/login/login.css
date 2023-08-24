@@ -1,4 +1,44 @@
-.shopTitle {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 430px;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.text img {
+  display: block;
+}
+
+button {
+  width: 196px;
+  height: 42px;
+  border-radius: 10px;
+  background: #8684ef;
+}
+
+input {
+  width: 438px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+form {
+  background-color: white;
+  border: 0;
+}
+/* old styles below */
+/* .shopTitle {
   text-align: center;
 }
 .login-container {
@@ -39,4 +79,4 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
