@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./register.css";
+import registerImage from "../login/images/SHOPLY (1).png";
 
 const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [registered, setRegistered] = useState(false);
+  const [number, setNumber] = useState("");
 
   const handleRegistration = (event) => {
     event.preventDefault();
@@ -24,36 +26,70 @@ const Register = () => {
   }
 
   return (
-    <div className="registrationBox">
-      <h1>Registration Page</h1>
-      <form onSubmit={handleRegistration}>
-        <div>
-          <label>Username:</label>
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
+    <>
+      <div className="main">
+        <div className="content">
+          <h2>
+            Create an <span>Account</span>
+          </h2>
+          <form onSubmit={handleRegistration}>
+            <div className="item">
+              <p>Fullname</p>
+              <input
+                type="text"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                placeholder="Enter Your User Name"
+              />
+            </div>
+
+            <div className="item">
+              <p>Email</p>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter Your Email"
+              />
+            </div>
+
+            <div className="item">
+              <p>Phone Number</p>
+              <input
+                type="text"
+                value={number}
+                onChange={(e) => setNumber(e.target.value)}
+                placeholder="Enter Your Phone Number"
+              />
+            </div>
+
+            <div className="item">
+              <p>Password</p>
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter Your Password"
+              />
+            </div>
+            <div className="btn">
+              <button type="submit">Create Account</button>
+            </div>
+            <div className="login-text">
+              <p>
+                Already have an account?{" "}
+                <span>
+                  <a href="/login">Login</a>
+                </span>
+              </p>
+            </div>
+          </form>
         </div>
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+        <div className="image">
+          <img src={registerImage} alt="image here" />
         </div>
-        <div>
-          <label>Password:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <button type="submit">Register</button>
-      </form>
-    </div>
+      </div>
+    </>
   );
 };
 
