@@ -5,19 +5,37 @@
   font-family: "Poppins", sans-serif;
 }
 
-.main {
+.login-main {
   display: flex;
   justify-content: center;
 }
 
+.logoImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.welcomeImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
 .image img {
   width: 430px;
   height: 100vh;
   flex-shrink: 0;
 }
 
-.text img {
-  display: block;
+.content {
+  justify-content: center;
+  /* background-color: aliceblue; */
+}
+
+.forgotPassword {
+  text-align: right;
+  color: #8684ef;
+  padding-right: 10px;
 }
 
 button {
@@ -25,6 +43,13 @@ button {
   height: 42px;
   border-radius: 10px;
   background: #8684ef;
+  border: 0px;
+  color: white;
+}
+
+.login-form {
+  position: relative;
+  top: 40px;
 }
 
 input {
@@ -33,10 +58,13 @@ input {
   flex-shrink: 0;
 }
 
-form {
-  background-color: white;
-  border: 0;
+.create-account {
+  text-align: center;
+  margin-top: 30px;
+  color: #999292;
+  font-size: 15px;
 }
+
 /* old styles below */
 /* .shopTitle {
   text-align: center;

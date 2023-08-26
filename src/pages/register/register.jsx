@@ -34,7 +34,7 @@ const Register = () => {
           </h2>
           <form onSubmit={handleRegistration}>
             <div className="item">
-              <p>Fullname</p>
+              <p>Full Name</p>
               <input
                 type="text"
                 value={username}

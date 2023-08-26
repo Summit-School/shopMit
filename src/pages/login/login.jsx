@@ -45,32 +45,42 @@ const Login = () => {
         </form>
       </div> */}
 
-      <div className="main">
+      <div className="login-main">
         <div className="image">
           <img src={loginImage} alt="image here" />
         </div>
-        <div className="text">
-          <img src={logoImg} alt="logoImg here" />
-          <img src={welcomeImg} alt="WelcomeImg here" />
+        <div className="content">
+          <div className="logoImg">
+            <img src={logoImg} alt="logoImg here" />
+          </div>
+          <div className="welcomeImg">
+            <img src={welcomeImg} alt="WelcomeImg here" />
+          </div>
           <form onSubmit={handleLogin} className="login-form">
-            <p>Email</p>
-            <input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={handleEmailChange}
-            />
+            <div className="item">
+              <p>Email</p>
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={handleEmailChange}
+              />
+            </div>
 
-            <p>Password</p>
-            <input
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={handlePasswordChange}
-            />
-            <p className="forgotPassword">forgot password</p>
-            <button type="submit">Sign In</button>
-            <p>
+            <div className="item">
+              <p>Password</p>
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={handlePasswordChange}
+              />
+            </div>
+            <p className="forgotPassword">Forgot Password?</p>
+            <div className="btn">
+              <button type="submit">Sign In</button>
+            </div>
+            <p className="create-account">
               Don't have an account? <span>Create Account</span>
             </p>
           </form>
