@@ -5,6 +5,7 @@
   justify-content: flex-end;
   align-items: center;
   height: 12vh;
+
 }
 
 .links {
@@ -164,19 +165,30 @@ height: auto;
 .footerStyle  {
   /* background-color: red; */
   background-color: rgba(80, 62, 92, 0.2) ;
+  border-top: 3px solid rgba(83, 60, 98, 0.2);
   padding: 20px 0;
   /* position: 'absolute'; */
-
+  
   bottom: 0;
   width: 100%;
-  height: 30vh;
+  height: 55vh;
 }
+
 .containerStyle  {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(4,1fr);
   justify-content: center;
   align-items: center;
+  justify-items: center;
   
+}
+.containerStyle1{
+  font-size: 1.3rem;
+  padding-bottom: 10%;
+  padding-left: 30%;
+}
+.containerStyle3{
+  padding-top: 9.5%;
 }
 ul{
   list-style-type:none;

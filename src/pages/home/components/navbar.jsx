@@ -7,11 +7,12 @@ export const Navbar = () => {
     <div className="navbar">
     <p className="shoMit" >Shop<span>M</span>it</p>
       <div className="links">
-        <Link to="/home/"> Shop </Link>
-        <Link to="/home/contact"> Contact </Link>
+      <Link to="/home"> Shop </Link>
+        <Link to="/about"> About </Link>
         <Link to="/home/cart">
           cart
         </Link>
+        
       </div>
     </div>
   );

@@ -1,5 +1,3 @@
-
-
 import prod1 from "./featuredImage/babiesf.png";
 import prod2 from "./featuredImage/carf.png";
 import prod3 from "./featuredImage/iphone2f.png";

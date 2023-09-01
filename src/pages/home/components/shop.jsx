@@ -48,22 +48,21 @@ export const Shop = () => {
       <div className="b4grid">
         <p className="searchP" >Check Out Our Vast <span> Collections </span> </p>
         <p className="searchP2"> <span> Avaiable at all prices  </span> </p>
-        <input className="searchBar"
-        type="text"
-        placeholder="Search by category..."
-      />
-
       </div>
-
-      
-
-  
-
-      <div className="products">
-        {PRODUCTS.map((product) => (
-          <Product data={product} />
-        ))}
-      </div>
+{/* Grid Animation to be done later in the as the project proceeds */}
+        <div className="animeGrid">
+          <div className ="b4grid2">
+            <input className="searchBar"
+            type="text"
+            placeholder="Search by category..."
+                  />
+          </div>
+            <div className="products">
+          {PRODUCTS.map((product) => (
+            <Product data={product} />
+          ))}
+                </div>
+        </div>
 
       <Testimonials/>
     </div>
