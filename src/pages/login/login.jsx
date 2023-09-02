@@ -7,6 +7,8 @@ import welcomeImg from "./images/Welcome Back.png";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [logged, setLogged] = useState(false);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -16,35 +18,41 @@ const Login = () => {
     setPassword(e.target.value);
   };
 
-  const handleLogin = (e) => {
-    e.preventDefault();
+  const handleLogin = async (event) => {
+    event.preventDefault();
 
-    //  logic to validate the user's credentials and perform the login action.
-    console.log("Logging in with email:", email, "and password:", password);
+    try {
+      const response = await fetch("http://localhost:8000/user");
+      const users = await response.json();
+
+      const user = users.find(
+        (u) => u.email === email && u.password === password
+      );
+
+      if (user) {
+        // Successful login logic
+        console.log("Login successful");
+        alert("Successfull login");
+        setLogged(true);
+      } else {
+        setError("Invalid username or password");
+      }
+    } catch (error) {
+      console.error("Error occurred during login:", error);
+      setError("An error occurred during login");
+    }
   };
+  if (logged) {
+    return (
+      <div className="registrationBox">
+        <h1>Loggin Successful!</h1>
+        <p>Your email: {email}</p>
+      </div>
+    );
+  }
 
   return (
     <>
-      {/* <h1 className="shopTitle">ShopMit</h1>
-      <div className="login-container">
-        <form onSubmit={handleLogin} className="login-form">
-          <h2>Login</h2>
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={handleEmailChange}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={handlePasswordChange}
-          />
-          <button type="submit">Login</button>
-        </form>
-      </div> */}
-
       <div className="login-main">
         <div className="image">
           <img src={loginImage} alt="image here" />

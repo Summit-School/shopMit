@@ -8,12 +8,44 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [registered, setRegistered] = useState(false);
   const [number, setNumber] = useState("");
+  const [error, setError] = useState("");
 
-  const handleRegistration = (event) => {
+  const handleRegistration = async (event) => {
     event.preventDefault();
-    // For simplicity, we won't store the user data. We'll just show a message upon successful "registration".
-    setRegistered(true);
+
+    try {
+      const newUser = {
+        username,
+        email,
+        number,
+        password,
+      };
+
+      const response = await fetch("http://localhost:8000/user", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newUser),
+      });
+
+      if (response.ok) {
+        // Successful registration logic
+        console.log("Registration successful");
+        setRegistered(true);
+      } else {
+        setError("Registration failed");
+      }
+    } catch (error) {
+      console.error("Error occurred during registration:", error);
+      setError("An error occurred during registration");
+    }
   };
+  // const handleRegistration = (event) => {
+  //   event.preventDefault();
+  //   // For simplicity, we won't store the user data. We'll just show a message upon successful "registration".
+  //   setRegistered(true);
+  // };
 
   if (registered) {
     return (

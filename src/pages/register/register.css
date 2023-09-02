@@ -62,3 +62,9 @@ button {
 .login-text p {
   font-size: 15px;
 }
+
+.registrationBox {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
