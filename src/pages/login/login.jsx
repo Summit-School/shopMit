@@ -24,10 +24,16 @@ const Login = () => {
     try {
       const response = await fetch("http://localhost:8000/user");
       const users = await response.json();
+      console.log(users);
 
-      const user = users.find(
-        (u) => u.email === email && u.password === password
+      // setLogged(true);
+      const user = await users.filter(
+        (user) => user.email === email && user.password === password
       );
+      localStorage.setItem("carl", user);
+      let item = localStorage.getItem("carl");
+      console.log("user is: ", item);
+      localStorage.removeItem("carl");
 
       if (user) {
         // Successful login logic
@@ -42,6 +48,7 @@ const Login = () => {
       setError("An error occurred during login");
     }
   };
+
   if (logged) {
     return (
       <div className="registrationBox">
