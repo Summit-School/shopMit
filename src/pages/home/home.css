@@ -1,0 +1,15 @@
+
+.home {
+    width: 100%;
+    height: auto;
+     min-height: 100vh; 
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* display: grid;
+    grid-template: repeat(3,100px);*/
+    
+  }
+  
+.try{
+  border: 200px;
+  
+}
