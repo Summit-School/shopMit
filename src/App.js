@@ -10,7 +10,7 @@ import Home from "./pages/home/home";
 import About from "./pages/about/about";
 import Login from "./pages/login/login";
 import Register from "./pages/register/register";
-import { Mecat } from "./pages/categories/ElectronicsP/MEcat";
+
 
 
 
@@ -21,8 +21,8 @@ function App() {
         {/* <Route exact path="/" component={Home} /> */}
         <Route exact path="/home" component={Home} />
 
-        <Route exact path="/home/Automotive" component={Mecat} />
-        {/* <Route exact path="/home/BeautyCare" component={Ecat} />
+        {/* <Route exact path="/home/Automotive" component={Mecat} /> 
+         <Route exact path="/home/BeautyCare" component={Ecat} />
         <Route exact path="/home/Clothing" component={Ecat} />
         <Route exact path="/home/Electronics" component={Ecat} />
         <Route exact path="/home/Furniture" component={Ecat} />
