@@ -10,6 +10,10 @@ To download all the neccessarry dependencies`
 
 ### `npm start`
 
+## `npx json-server --watch data/db.json --port 8000`
+
+To start json server on port 8000s
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 

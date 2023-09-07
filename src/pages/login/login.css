@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-main {
+  display: flex;
+  justify-content: center;
+}
+
+.logoImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.welcomeImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.image img {
+  width: 430px;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.content {
+  justify-content: center;
+  /* background-color: aliceblue; */
+}
+
+.forgotPassword {
+  text-align: right;
+  color: #8684ef;
+  padding-right: 10px;
+}
+
+button {
+  width: 196px;
+  height: 42px;
+  border-radius: 10px;
+  background: #8684ef;
+  border: 0px;
+  color: white;
+}
+
+.login-form {
+  position: relative;
+  top: 40px;
+}
+
+input {
+  width: 438px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.create-account {
+  text-align: center;
+  margin-top: 30px;
+  color: #999292;
+  font-size: 15px;
+}
+
+@media (max-width: 925px) {
+  .image {
+    display: none;
+  }
+}
+
+/* old styles below */
+/* .shopTitle {
+  text-align: center;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */

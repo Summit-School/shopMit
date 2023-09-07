@@ -1,0 +1,32 @@
+{
+  "user": [
+    {
+      "username": "Ndikintum Carl Nfon",
+      "email": "nfoncarl@gmail.com",
+      "phoneNumber": "679283978",
+      "password": "12345",
+      "id": "1"
+    },
+    {
+      "username": "John Doe",
+      "email": "john@gmail.com",
+      "phoneNumber": "12345678",
+      "password": "12345",
+      "id": "2"
+    },
+    {
+      "username": "NDIKINTUM CARL",
+      "email": "mayorcarl48@gmail.com",
+      "number": "12345",
+      "password": "124",
+      "id": "O3AwTID"
+    },
+    {
+      "username": "Jhon Smith",
+      "email": "smith@gmail.com",
+      "number": "1233445",
+      "password": "123",
+      "id": "eLxe13Y"
+    }
+  ]
+}
