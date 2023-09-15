@@ -10,53 +10,54 @@
 
 .links {
   
-  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.links a {
+.links li  a {
+  /* background-color: rgba(80, 62, 92, 0.2) ; */
   text-decoration: none;
-  margin-left: 20px;
-  font-size: 25px;
+  margin-right: 2rem;
+  font-size: 1.5rem;
 }
 
 
 
 .parent{
-  position: relative;
-  width:  100%; /* Parent container takes up 100% of its parent's width */
   height: 88vh; /* Adjust this if you want the container to take up a specific percentage of the viewport height */    
-  display: flex;
-  /* border:5px solid rgb(174, 47, 47); */
+  /* display: flex; */
+  /* border:5px solid rgb(255, 0, 0); */
   
 
   
 }
 .heroImage {
-  /* position: relative; */
   display: flex;
-  justify-content:row;
-  row-gap: 0px;
+  justify-content:space-between;
   align-items:end;
-  width: 100%; /* Width covers the whole page width */
-  height: 100%; /* Height is a variable value as a percentage of the viewport height */
-  /* background-color: #1B1927; */
-  /* background-color: rgb(52, 0, 52); */
   background-color: rgb(39, 3, 64) ;
-  /* border:12px solid black; */
+  /* border:5px solid black; */
+  height: 88vh;
 }
+
+.image img{
+  /* bord    er:12px solid rgb(0, 34, 255); */
+  height: 100% !important;
+  width: 100% !important;
+  }
+  
 .image{
-height: 95%;
-width: 60%;
-/* border:12px solid red; */
+ flex-basis:50%; 
+align-self:stretch;
+/* border:5px solid red; */
 }
 .text{
-  /* margin-bottom: 0%; */
-  padding-left:16%;
-  /* padding-right: 0%; */
-  padding-bottom: 4%;
-  height: 85%;
-  width: 40%;
-  /* border:12px solid black; */
+  padding-top: 3%;
+  padding-left:15%;
+  align-self: stretch;
+  flex-basis:45%; 
+  /* border:5px solid black; */
 }
 
 .yellow{
@@ -71,7 +72,7 @@ width: 100%;
   width:32%;
   height:10%;
   border-radius:15px;
-  transition:0.8s;
+  transition:0.5s;
   font-size: larger;
 
 }
@@ -108,8 +109,10 @@ span{
   color:rgba(125, 108, 202, 0.963);
 }
 .shoMit{
-  padding-right:70% ;
-  text-align: end;
+  /* background-color: rgba(80, 62, 92, 0.2) ; */
+  margin-right:auto ;
+  margin-left: 7%;
+  text-align: center;
   font-size:200%;
   font-weight: bold;
   color:orange;

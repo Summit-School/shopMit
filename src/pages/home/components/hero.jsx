@@ -1,6 +1,7 @@
 import React from "react";
 // import { Navbar } from "./navbar";
-import img1 from "../assests/HComponentsImages/yellow.png";
+// import img1 from "../assests/HComponentsImages/yellow.png";
+import img1 from "../../assets/HComponentsImages/yellow.png";
 
 const Hero = () => {
   return (
@@ -17,9 +18,11 @@ const Hero = () => {
           </p>
           <button className="heroButton">Get started</button>
         </div>
+        
         <div className="image">
           <img className="yellow" src={img1} alt="yellow scarf" />
         </div>
+
       </div>
     </div>
   );

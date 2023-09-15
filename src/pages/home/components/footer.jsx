@@ -9,6 +9,7 @@ export const Footer = () => {
         <div className="containerStyle1">
           <p class="shoMit">
             Shop<span>M</span>it
+          
           </p>
           <p>&copy; 2023 Your E-commerce Website. All rights reserved.</p>
           <p>Contact: contact@example.com</p>

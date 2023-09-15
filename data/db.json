@@ -28,5 +28,338 @@
       "password": "123",
       "id": "eLxe13Y"
     }
-  ]
+  ],
+
+  "Automotive": [
+    {
+      "id": 1,
+      "name": "bike1",
+      "category": "Automotive",
+      "type": "Bike",
+      "price": 199.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Automotive/bike1.PNG",
+      "rating": 4.2,
+      "stock": 20,
+      "brand": "Brand X"
+    },
+    {
+      "id": 2,
+      "name": "bike2",
+      "category": "Automotive",
+      "type": "Bike",
+      "price": 249.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Automotive/bike2.PNG",
+      "rating": 4.0,
+      "stock": 15,
+      "brand": "Brand Y"
+    },
+    {
+      "id": 3,
+      "name": "bus1",
+      "category": "Automotive",
+      "type": "Bus",
+      "price": 9999.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Automotive/bus1.PNG",
+      "rating": 3.8,
+      "stock": 5,
+      "brand": "Brand Z"
+    },
+    {
+      "id": 4,
+      "name": "car1",
+      "category": "Automotive",
+      "type": "Car",
+      "price": 29999.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Automotive/car1.PNG",
+      "rating": 4.5,
+      "stock": 10,
+      "brand": "Brand A"
+    },
+    {
+      "id": 5,
+      "name": "car2",
+      "category": "Automotive",
+      "type": "Car",
+      "price": 34999.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "assests/Automotive/car2.PNG",
+      "rating": 4.6,
+      "stock": 8,
+      "brand": "Brand B"
+    },
+    {
+      "id": 6,
+      "name": "car3",
+      "category": "Automotive",
+      "type": "Car",
+      "price": 31999.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Automotive/car3.PNG",
+      "rating": 4.3,
+      "stock": 12,
+      "brand": "Brand C"
+    },
+    {
+      "id": 7,
+      "name": "car4",
+      "category": "Automotive",
+      "type": "Car",
+      "price": 27999.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Automotive/car4.PNG",
+      "rating": 4.4,
+      "stock": 18,
+      "brand": "Brand D"
+    },
+    {
+      "id": 8,
+      "name": "car5",
+      "category": "Automotive",
+      "type": "Car",
+      "price": 36999.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Automotive/car5.PNG",
+      "rating": 4.7,
+      "stock": 6,
+      "brand": "Brand E"
+    },
+    {
+      "id": 9,
+      "name": "car6",
+      "category": "Automotive",
+      "type": "Car",
+      "price": 32999.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Automotive/car6.PNG",
+      "rating": 4.1,
+      "stock": 14,
+      "brand": "Brand F"
+    },
+    {
+      "id": 10,
+      "name": "jeep1",
+      "category": "Automotive",
+      "type": "Jeep",
+      "price": 28999.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Automotive/jeep1.PNG",
+      "rating": 4.2,
+      "stock": 22,
+      "brand": "Brand G"
+    },
+    {
+      "id": 11,
+      "name": "jeep2",
+      "category": "Automotive",
+      "type": "Jeep",
+      "price": 25999.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Automotive/jeep2.PNG",
+      "rating": 4.0,
+      "stock": 16,
+      "brand": "Brand H"
+    },
+    {
+      "id": 12,
+      "name": "tractor1",
+      "category": "Automotive",
+      "type": "Tractor",
+      "price": 19999.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Automotive/tractor1.PNG",
+      "rating": 3.9,
+      "stock": 9,
+      "brand": "Brand I"
+    }
+  ],
+  "BeautyCare": [
+    
+      {
+        "id": 13,
+        "name": "hairBrush1",
+        "category": "BeautyCare",
+        "type": "Hair Brush",
+        "price": 9.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/hairBrush1.PNG",
+        "rating": 4.2,
+        "stock": 30,
+        "brand": "Brand X"
+      },
+      {
+        "id": 14,
+        "name": "hairBrush2",
+        "category": "BeautyCare",
+        "type": "Hair Brush",
+        "price": 12.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/hairBrush2.PNG",
+        "rating": 4.5,
+        "stock": 25,
+        "brand": "Brand Y"
+      },
+      {
+        "id": 15,
+        "name": "hairDryer1",
+        "category": "BeautyCare",
+        "type": "Hair Dryer",
+        "price": 29.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/hairDryer1.PNG",
+        "rating": 4.0,
+        "stock": 15,
+        "brand": "Brand Z"
+      },
+      {
+        "id": 16,
+        "name": "hairDryer2",
+        "category": "BeautyCare",
+        "type": "Hair Dryer",
+        "price": 34.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/hairDryer2.PNG",
+        "rating": 4.3,
+        "stock": 20,
+        "brand": "Brand A"
+      },
+      {
+        "id": 17,
+        "name": "hairDryer3",
+        "category": "BeautyCare",
+        "type": "Hair Dryer",
+        "price": 39.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/hairDryer3.PNG",
+        "rating": 4.7,
+        "stock": 18,
+        "brand": "Brand B"
+      },
+      {
+        "id": 18,
+        "name": "lipgloss1",
+        "category": "BeautyCare",
+        "type": "Lip Gloss",
+        "price": 8.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/lipgloss1.PNG",
+        "rating": 4.6,
+        "stock": 40,
+        "brand": "Brand C"
+      },
+      {
+        "id": 19,
+        "name": "lipgloss2",
+        "category": "BeautyCare",
+        "type": "Lip Gloss",
+        "price": 7.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/lipgloss2.PNG",
+        "rating": 4.4,
+        "stock": 35,
+        "brand": "Brand D"
+      },
+      {
+        "id": 20,
+        "name": "makeupBrush",
+        "category": "BeautyCare",
+        "type": "Makeup Brush",
+        "price": 5.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/makeupBrush.PNG",
+        "rating": 4.2,
+        "stock": 50,
+        "brand": "Brand E"
+      },
+      {
+        "id": 21,
+        "name": "makeupkit",
+        "category": "BeautyCare",
+        "type": "Makeup Kit",
+        "price": 19.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/makeupkit.PNG",
+        "rating": 4.8,
+        "stock": 10,
+        "brand": "Brand F"
+      },
+      {
+        "id": 22,
+        "name": "Rubbing oil",
+        "category": "BeautyCare",
+        "type": "Rubbing Oil",
+        "price": 6.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/Roil.PNG",
+        "rating": 4.0,
+        "stock": 60,
+        "brand": "Brand G"
+      },
+      {
+        "id": 23,
+        "name": "shampoo",
+        "category": "BeautyCare",
+        "type": "Shampoo",
+        "price": 11.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/shampoo.PNG",
+        "rating": 3.7,
+        "stock": 25,
+        "brand": "Brand H"
+      },
+      {
+        "id": 24,
+        "name": "shampoo1",
+        "category": "BeautyCare",
+        "type": "Shampoo",
+        "price": 10.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/shampoo1.PNG",
+        "rating": 3.9,
+        "stock": 28,
+        "brand": "Brand I"
+      },
+      {
+        "id": 25,
+        "name": "soap1",
+        "category": "BeautyCare",
+        "type": "Soap",
+        "price": 2.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/soap1.PNG",
+        "rating": 4.1,
+        "stock": 75,
+        "brand": "Brand J"
+      },
+      {
+        "id": 26,
+        "name": "soap2",
+        "category": "BeautyCare",
+        "type": "Soap",
+        "price": 3.99,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/soap2.PNG",
+        "rating": 4.4,
+        "stock": 60,
+        "brand": "Brand K"
+      },
+      {
+        "id": 27,
+        "name": "soap3",
+        "category": "BeautyCare",
+        "type": "Soap",
+        "price": 2.49,
+        "description": "Lorem ipsum...",
+        "imagePath": "/assests/BeautyCare/soap3.PNG",
+        "rating": 4.3,
+        "stock": 70,
+        "brand": "Brand L"
+      }
+    ]
+    
+  
+  
 }
