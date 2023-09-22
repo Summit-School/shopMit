@@ -1,18 +1,18 @@
 import { React, useEffect, useState } from "react";
-import { PRODUCTS } from "../../assets/products";
+// import { PRODUCTS } from "../../assets/products";
 import { Product } from "./product";
 import "./shop.css";
-import bags from "../../assets/HComponentsImages/bags.png";
-import redlady from "../../assets/HComponentsImages/redLady.png";
-import down from "../../assets/HComponentsImages/down.png";
+import bags from "../assets/HComponentsImages/bags.png";
+import redlady from "../assets/HComponentsImages/redLady.png";
+import down from "../assets/HComponentsImages/down.png";
 
-import { feat } from "../../assets/featProducts";
+import { feat } from "../assets/featProducts";
 import { FeatAnimate } from "./featureAnimation";
 
 export const Shop = () => {
   const [auto, setAuto] = useState("");
   useEffect(() => {
-    fetch(" http://localhost:8000/Automotive")
+    fetch("    http://localhost:8000/Kids")
       .then((response) => response.json())
       .then((data) => {
         setAuto(data);
@@ -54,6 +54,7 @@ export const Shop = () => {
           Check Out Our Vast <span> Collections </span>{" "}
         </p>
         <p className="searchP2">
+      
           {" "}
           <span> Avaiable at all prices </span>{" "}
         </p>

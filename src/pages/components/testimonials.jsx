@@ -1,5 +1,5 @@
 // import svgI from "./test.png";
-import svgI from "../../assets/HComponentsImages/test.png";
+import svgI from "../assets/HComponentsImages/test.png";
 export const Testimonials = () => {
   return (
     <div className="testimony">
