@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
-import { PRODUCTS } from "../../products";
 import { CartItem } from "./cart-item";
 import { useHistory } from "react-router-dom"; // Use useHistory instead of useNavigate
 

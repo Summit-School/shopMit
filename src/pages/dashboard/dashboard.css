@@ -1,0 +1,65 @@
+/* Dashboard CSS */
+.dashboard {
+    height: 100vh;
+    background-color:#0057b360;
+    /* background-color: rgba(39, 3, 64, 0.889) ; */
+  }
+  .dashboardwrapper{
+    margin-left: 5%;
+  }
+  
+  h1 {
+    font-size: 24px;
+    background-color: white;
+  }
+  
+  /* Product Table CSS */
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .product-table th,
+  .product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .product-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .product-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .product-table tr:nth-child(odd) {
+    background-color: white;
+  }
+  
+  /* Edit and Delete Button CSS */
+  .edit-button,
+  .delete-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+  }
+  
+  .edit-button:hover,
+  .delete-button:hover {
+    background-color: #0056b3;
+  }
+  
+   .edit-button:focus,
+  .delete-button:focus {
+    outline: none;
+  } 
+  

@@ -18,7 +18,7 @@ export const ShopContextProvider = (props) => {
     return cart;
   };
   const [prod, setProd] = useState(null);
-  const [cartItems, setCartItems] = useState(null);
+  const [cartItems, setCartItems] = useState([]);
   useEffect(() => {
     fetch(" http://localhost:8000/BeautyCare")
       .then((response) => response.json())
@@ -41,7 +41,7 @@ export const ShopContextProvider = (props) => {
         console.log("this is the product length",prod.length);
         console.log("this is the are the number",number);
         console.log("this is the product id ",prod[1].name);
-        for (let i = number; i <= prod.length + number-1 ; i++) {
+        for (let i = number; i < prod.length + number ; i++) {
           cart[i] = 0;
           
         }

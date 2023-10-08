@@ -29,6 +29,46 @@
       "id": "eLxe13Y"
     }
   ],
+  "Featured":[
+    {
+      "id": 6,
+      "name": "car3",
+      "category": "Automotive",
+      "type": "Car",
+      "price": 31999.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Automotive/car3.PNG",
+      "rating": 4.3,
+      "stock": 12,
+      "brand": "Brand C"
+    },
+    {
+      "id": 61,
+      "name": "chair2",
+      "category": "Furniture",
+      "type": "Chair",
+      "price": 69.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Furniture/chair2.PNG",
+      "rating": 4.5,
+      "stock": 25,
+      "brand": "ElegantDesigns"
+    },      
+    {
+      "id": 67,
+      "name": "table1",
+      "category": "Furniture",
+      "type": "Table",
+      "price": 79.99,
+      "description": "Lorem ipsum...",
+      "imagePath": "/assests/Furniture/table1.PNG",
+      "rating": 4.4,
+      "stock": 28,
+      "brand": "SturdyTables"
+    }
+
+
+  ],
 
   "Automotive": [
     {
@@ -1211,10 +1251,4 @@
       }
     ]
     
-    
-    
-    
-    
-  
-  
 }

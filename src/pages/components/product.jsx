@@ -5,7 +5,8 @@ export const Product = (props) => {
   const { id,type,name,price,imagePath } = props.data;
   const { addToCart, cartItems } = useContext(ShopContext);
 
-  const cartItemCount = cartItems[id];
+  const cartItemCount = cartItems;
+  console.log(cartItems);
   
 const discount =(pric,discountPercent)=>{
     return price-(pric*(discountPercent/100))

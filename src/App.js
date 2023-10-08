@@ -5,6 +5,7 @@ import Home from "./pages/home/home";
 import About from "./pages/about/about";
 import Login from "./pages/login/login";
 import Register from "./pages/register/register";
+import Dashboard  from "./pages/dashboard/dashboard";
 // import cart from "./pages/cart/cart";
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/register" component={Register} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/home/dashboard" component={Dashboard} />
         {/* <Route exact path="/home/cart" component={cart} /> */}
 
         {/* <Route exact path="/home/Automotive" component={Mecat} />
