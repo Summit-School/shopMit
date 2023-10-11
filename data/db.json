@@ -70,7 +70,7 @@
 
   ],
 
-  "Automotive": [
+  "products": [
     {
       "id": 1,
       "name": "bike1",
@@ -214,10 +214,8 @@
       "rating": 3.9,
       "stock": 9,
       "brand": "Brand I"
-    }
-  ],
-  "BeautyCare": [
-    
+    },
+
       {
         "id": 13,
         "name": "hairBrush1",
@@ -397,9 +395,8 @@
         "rating": 4.3,
         "stock": 70,
         "brand": "Brand L"
-      }
-    ],
-    "Clothing":[
+      },
+
       {
         "id": 30,
         "name": "hat1",
@@ -543,10 +540,7 @@
         "rating": 4.6,
         "stock": 35,
         "brand": "SportyStyle"
-      }
-    ],
-
- "Electronics": [
+      },
       {
         "id": 50,
         "name": "1",
@@ -666,9 +660,7 @@
         "rating": 4.8,
         "stock": 25,
         "brand": "SuperTech"
-      }
-    ],
-    "Furniture":[
+      },
       {
         "id": 60,
         "name": "chair1",
@@ -788,9 +780,8 @@
         "rating": 4.9,
         "stock": 15,
         "brand": "OfficeFurniture"
-      }
-    ],
-    "Jewelry":[
+      },
+
       {
         "id": 700,
         "name": "alarm1",
@@ -1138,9 +1129,8 @@
         "rating": 4.7,
         "stock": 22,
         "brand": "TimeLuxury"
-      }
-    ],
-    "Kids":[
+      },
+
       {
         "id": 800,
         "name": "babyToys",

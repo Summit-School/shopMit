@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className="footerStyle">
       <div className="containerStyle">
         <div className="containerStyle1">
-          <p class="shoMit">
+          <p className="shoMit">
             Shop<span>M</span>it
           
           </p>
@@ -15,6 +15,7 @@ export const Footer = () => {
           <p>Contact: contact@example.com</p>
         </div>
         <div >
+        
           <ul>
             <li>Useful links </li>
             <li>

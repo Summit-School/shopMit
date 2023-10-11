@@ -46,10 +46,13 @@
 
 import { useEffect, useState } from 'react';
 
-// Custom hook to fetch data for a single category
-const useCategoryData = (category) => {
-  const [data, setData] = useState([]);
-  const apiUrl = `http://localhost:5000/${category}`;
+const useCategoryData = (category = '') => {
+  const [data, setData] = useState({});
+  let apiUrl = 'http://localhost:5000/products';
+
+  if (category!=='') {
+    apiUrl += `?category=${category}`;
+  }
 
   useEffect(() => {
     const fetchData = async () => {
@@ -60,6 +63,7 @@ const useCategoryData = (category) => {
         }
         const categoryData = await response.json();
         setData(categoryData);
+        console.log(`This are the category data from the useFetch function ${categoryData}`);
       } catch (error) {
         console.error(`Error fetching data for category ${category}:`, error);
       }
@@ -68,8 +72,16 @@ const useCategoryData = (category) => {
     fetchData();
   }, [category, apiUrl]);
 
-  return data;
+return {data,setData};
 };
+
+  // console.log(category);
+  // console.log(`These are the products from the useFetch function ${JSON.stringify(data)}`);
+
+  // console.log('These are the products from the useFetch function:');
+  // data.forEach(product => console.log(product));
+
+
 
 // Custom function to fetch data for multiple categories and aggregate it
 const fetchCategoryData = async (categories) => {

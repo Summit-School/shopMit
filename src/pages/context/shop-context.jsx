@@ -20,7 +20,7 @@ export const ShopContextProvider = (props) => {
   const [prod, setProd] = useState(null);
   const [cartItems, setCartItems] = useState([]);
   useEffect(() => {
-    fetch(" http://localhost:8000/BeautyCare")
+    fetch("http://localhost:5000/products?category:BeautyCare")
       .then((response) => response.json())
       .then((data) => {
         setProd(data);
@@ -77,7 +77,7 @@ export const ShopContextProvider = (props) => {
   };
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-    console.log(cartItems);
+    // console.log(cartItems);
   };
 
   const removeFromCart = (itemId) => {

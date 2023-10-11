@@ -6,7 +6,7 @@ export const Product = (props) => {
   const { addToCart, cartItems } = useContext(ShopContext);
 
   const cartItemCount = cartItems;
-  console.log(cartItems);
+  //  console.log(`this are the ${cartItems}`);
   
 const discount =(pric,discountPercent)=>{
     return price-(pric*(discountPercent/100))
@@ -35,15 +35,15 @@ const discountPrice   =roundToTwoDecimalPlaces(discountP)
           <p className="productDiscount">${discountPrice} <span >(SAVE {discountPercent}% NOW)</span> </p>
           
           <div className="RatingStars">
-          <span class=" rating material-symbols-outlined">star_rate</span>
-          <span class=" rating material-symbols-outlined">star_rate</span>
-          <span class=" rating material-symbols-outlined">star_rate</span>
-          <span class=" rating material-symbols-outlined">star_rate</span>
-          <span class=" rating material-symbols-outlined">star_rate_half</span>
+          <span className=" rating material-symbols-outlined">star_rate</span>
+          <span className=" rating material-symbols-outlined">star_rate</span>
+          <span className=" rating material-symbols-outlined">star_rate</span>
+          <span className=" rating material-symbols-outlined">star_rate</span>
+          <span className=" rating material-symbols-outlined">star_rate_half</span>
           </div>
             
                 <div className="ADDCART">
-                <span class="cartIcon material-symbols-outlined">add_shopping_cart</span>
+                <span className="cartIcon material-symbols-outlined">add_shopping_cart</span>
           <button className="addToCartBttn" onClick={() => addToCart(id)}>
             Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
           </button>

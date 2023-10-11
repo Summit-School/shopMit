@@ -1,16 +1,21 @@
 /* Dashboard CSS */
 .dashboard {
-    height: 100vh;
-    background-color:#0057b360;
-    /* background-color: rgba(39, 3, 64, 0.889) ; */
+    height: auto;
+    /* background-color:#0057b360; */
+    background-color: rgba(39, 3, 64, 0.889) ;
   }
   .dashboardwrapper{
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   
   h1 {
-    font-size: 24px;
-    background-color: white;
+    font-size: 4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    /* background-color: white; */
+    /* color: white; */
+    color:#FEEFC7;
   }
   
   /* Product Table CSS */
@@ -42,6 +47,8 @@
   .edit-button,
   .delete-button {
     background-color: #007bff;
+    display: inline;
+    width: 50%;
     color: white;
     border: none;
     padding: 6px 12px;
@@ -62,4 +69,45 @@
   .delete-button:focus {
     outline: none;
   } 
+  .actionB{
+    /* border: 10px solid black; */
+    display:flex;
+    flex-direction: row;
+  }
+
+  /* trybyerror code */
+  .custom-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .custom-alert-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .custom-alert button {
+    background: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-alert button:hover {
+    background: #0056b3;
+  }
   

@@ -13,12 +13,14 @@ export const Shop = () => {
   
   // const [products, setProducts] = useState([]);
   
-  const [category, setCategory] = useState('automotive');
+  const [category, setCategory] = useState('Automotive');
   const auto = useCategoryData(category);
+  // console.log(`This are the products from  the shop Page ${auto}`)
   
 
   const handleCategoryChange = (e) => {
     setCategory(e.target.value);
+    console.log(category);
   };
   
   
@@ -72,15 +74,15 @@ export const Shop = () => {
           />
        <label htmlFor="category">Select Category:</label>
     <select id="category" onChange={handleCategoryChange} value={category}>
-        <option value="automotive">Automotive</option>
-        <option value="beautyCare">BeautyCare</option>
-        <option value="clothing">Clothing</option>
-        <option value="electronics">Electronics</option>
-         <option value="furniture">Furniture</option>
-        <option value="jewelry">Jewelry</option>
-        <option value="kids">Kids</option> 
+        <option value="Automotive">Automotive</option>
+        <option value="BeautyCare">BeautyCare</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Electronics">Electronics</option>
+         <option value="Furniture">Furniture</option>
+        <option value="Jewelry">Jewelry</option>
+        <option value="Kids">Kids</option> 
     </select>
-    [Automotive,BeautyCare,Clothing,Electronics,Furniture,Jewelry,Kids]
+    {/* [Automotive,BeautyCare,Clothing,Electronics,Furniture,Jewelry,Kids] */}
 
         </div>
         
