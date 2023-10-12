@@ -62,8 +62,14 @@ const Dashboard = () => {
                   <td>
                   <div className="actionB">
                     <button
+                        className="view-button"
+                        // onClick={() => openCustomAlert("EDIT PRODUCT DETAILS")}
+                      >
+                        View
+                      </button>
+                    <button
                         className="edit-button"
-                        onClick={() => openCustomAlert("This is a custom alert!")}
+                        onClick={() => openCustomAlert("EDIT PRODUCT DETAILS")}
                       >
                         Edit
                       </button>
@@ -84,7 +90,31 @@ const Dashboard = () => {
         <div className="custom-alert">
           <div className="custom-alert-content">
             <p>{customAlert.message}</p>
-            <button onClick={closeCustomAlert}>OK</button>
+            <form action="">
+            <div>
+            {/* <label htmlFor="productName">Name</label> */}
+              <input type="text" id="productName" placeholder='Name'/>
+            </div>
+              <div>
+            {/* <label htmlFor="Price">Price</label> */}
+              <input type="number" id="Price" placeholder='Price'/>
+              </div>
+              <div>
+            {/* <label htmlFor="ProductDescription">Description</label> */}
+              <textarea name="" id="ProductDescription" cols="30" rows="10">Description</textarea>
+
+              </div>
+              <div>
+            {/* <label htmlFor="Stock">Stock</label> */}
+              <input type="number" id="Stock" placeholder='Stock'/>
+
+              </div>
+             
+
+            </form>
+            <div className='DoneButton'>
+            <button onClick={closeCustomAlert}>Done</button>
+            </div>
           </div>
         </div>
       )}
